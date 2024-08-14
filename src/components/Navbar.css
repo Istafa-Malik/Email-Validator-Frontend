@@ -1,26 +1,105 @@
+/* src/components/Navbar.css */
+
+/* Navbar structure */
+.navbar {
+  position: fixed; /* Fixes the navbar at the top of the viewport */
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0d111a; /* Background color */
+  background-opacity: 1; /* Ensure full opacity */
+  transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+  z-index: 1000; /* Ensure navbar is on top of other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
+}
+
+/* Shrink effect */
+.navbar-shrink {
+  transform: scaleY(0.9); /* Shrink the navbar */
+  transform-origin: top; /* Ensure it shrinks from the top */
+  padding: 0.5rem 1rem; /* Adjust padding */
+}
+
+/* Ensure header has enough top margin to avoid overlap */
+body {
+  margin-top: 60px; /* Adjust according to your navbar height */
+}
+
+/* Navbar container to avoid overlapping */
+.navbar-container {
+  padding: 1rem 1rem; /* Adjust padding if needed */
+  max-width: 100%;
+  margin: 0 auto; /* Center align */
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Ensure space between the brand and links */
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 110%;
+  transition: transform 0.3s ease, color 0.3s ease;
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.navbar-brand:hover {
+  color: teal;
+  transform: scale(1.1);
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Common styling for navbar links */
 .navbar-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-size: 110%; /* Increase text size by 10% */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
-  }
-  
-  .navbar-link:hover {
-    color: teal;
-    transform: scale(1.1); /* Expand the size on hover */
-  }
-  
-  /* Style for the Email Validator button */
-  .email-validator {
-    color: white;
-    text-decoration: none;
-    font-size: 110%; /* Increase text size by 10% */
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .email-validator:hover {
-    color: teal;
-    transform: scale(1.1); /* Expand the size on hover */
-  }
-  
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 110%;
+  transition: transform 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-link:hover {
+  color: teal;
+  transform: scale(1.1);
+}
+
+/* Styling for the 'Sign Up' button */
+.signup-button {
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  font-size: 110%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.signup-button:hover {
+  color: teal;
+  transform: scale(1.1);
+  background-color: white;
+}
+
+/* Icon styling */
+.navbar-icon {
+  margin-right: 0.5rem; /* mr-2 */
+  font-size: 1.25rem; /* text-xl */
+}

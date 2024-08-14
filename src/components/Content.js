@@ -1,139 +1,139 @@
-// src/components/Content.js
-import React from 'react';
+import React, { useState } from 'react';
+import './Content.css';
 
 export const Content = () => {
+  const [activeStep, setActiveStep] = useState(null);
+
+  const toggleStep = (step) => {
+    setActiveStep(activeStep === step ? null : step);
+  };
+
   return (
-    <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="absolute inset-0">
-        <div className="absolute inset-y-0 z-0 w-full h-full bg-gray-100 lg:w-3/4" />
-      </div>
-      <div className="relative">
-        <div className="grid gap-12 row-gap-8 lg:grid-cols-2">
-          <div className="grid gap-12 row-gap-5 md:grid-cols-2">
-            <div className="relative">
+    <div className="custom-content-container">
+      <h2 className="custom-content-heading">About Email Validator</h2>
+      <div className="custom-content-wrapper">
+        <div className="custom-features-grid">
+          <div className="custom-feature-item">
+            <div className="custom-feature-icon">
               <svg
-                viewBox="0 0 52 24"
-                fill="currentColor"
-                className="absolute top-0 left-0 z-0 w-32 -mt-8 -ml-16 text-blue-gray-100 lg:w-32 lg:-mt-12"
+                className="custom-icon-svg"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
               >
-                <defs>
-                  <pattern
-                    id="d06ca312-d4ed-465f-ad18-fb0c0f92b6f1"
-                    x="0"
-                    y="0"
-                    width=".135"
-                    height=".30"
-                  >
-                    <circle cx="1" cy="1" r=".7" />
-                  </pattern>
-                </defs>
-                <rect
-                  fill="url(#d06ca312-d4ed-465f-ad18-fb0c0f92b6f1)"
-                  width="52"
-                  height="24"
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
                 />
               </svg>
-              <div className="relative">
-                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-teal-accent-400">
-                  <svg
-                    className="w-8 h-8 text-teal-900"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
-                </div>
-                <h6 className="mb-2 font-semibold leading-5">
-                  Accurate Email Verification
-                </h6>
-                <p className="text-sm text-gray-900">
-                  Our tool ensures that every email address is validated against the latest standards, reducing bounce rates and increasing deliverability.
-                </p>
-              </div>
             </div>
-            <div>
-              <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-teal-accent-400">
-                <svg
-                  className="w-8 h-8 text-teal-900"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <h6 className="mb-2 font-semibold leading-5">
-                Real-Time Validation
-              </h6>
-              <p className="text-sm text-gray-900">
-                Our real-time validation checks the format and domain of email addresses as they are entered, providing instant feedback.
-              </p>
-            </div>
-            <div>
-              <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-teal-accent-400">
-                <svg
-                  className="w-8 h-8 text-teal-900"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <h6 className="mb-2 font-semibold leading-5">
-                Bulk Email Processing
-              </h6>
-              <p className="text-sm text-gray-900">
-                Process large volumes of email addresses quickly and efficiently with our bulk validation feature.
-              </p>
-            </div>
-            <div>
-              <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-teal-accent-400">
-                <svg
-                  className="w-8 h-8 text-teal-900"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-              <h6 className="mb-2 font-semibold leading-5">
-                Comprehensive Reporting
-              </h6>
-              <p className="text-sm text-gray-900">
-                Receive detailed reports on validation results, including invalid email addresses and possible errors.
-              </p>
-            </div>
+            <h6 className="custom-feature-heading">Accurate Email Verification</h6>
+            <p className="custom-feature-text">
+              Our tool ensures that every email address is validated against the latest standards, reducing bounce rates and increasing deliverability.
+            </p>
           </div>
-          <div>
-            <img
-              className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-              src="https://images.pexels.com/photos/3182788/pexels-photo-3182788.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940"
-              alt="Email Validation"
-            />
+          <div className="custom-feature-item">
+            <div className="custom-feature-icon">
+              <svg
+                className="custom-icon-svg"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="custom-feature-heading">Real-Time Validation</h6>
+            <p className="custom-feature-text">
+              Our real-time validation checks the format and domain of email addresses as they are entered, providing instant feedback.
+            </p>
           </div>
+          <div className="custom-feature-item">
+            <div className="custom-feature-icon">
+              <svg
+                className="custom-icon-svg"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="custom-feature-heading">Bulk Email Processing</h6>
+            <p className="custom-feature-text">
+              Process large volumes of email addresses quickly and efficiently with our bulk validation feature.
+            </p>
+          </div>
+          <div className="custom-feature-item">
+            <div className="custom-feature-icon">
+              <svg
+                className="custom-icon-svg"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </svg>
+            </div>
+            <h6 className="custom-feature-heading">Comprehensive Reporting</h6>
+            <p className="custom-feature-text">
+              Receive detailed reports on validation results, including invalid email addresses and possible errors.
+            </p>
+          </div>
+        </div>
+        
+        <h3 className="custom-steps-heading">How to Use Email Validator</h3>
+        
+        <div className="custom-steps-container">
+          <div 
+            className={`custom-step-item ${activeStep === 1 ? 'active' : ''}`} 
+            onClick={() => toggleStep(1)}
+          >
+            <div className="custom-step-heading">1. Enter Email</div>
+            <p className="custom-step-text">Start by entering the email address you want to validate.</p>
+          </div>
+          <div 
+            className={`custom-step-item ${activeStep === 2 ? 'active' : ''}`} 
+            onClick={() => toggleStep(2)}
+          >
+            <div className="custom-step-heading">2. Verify Format</div>
+            <p className="custom-step-text">Our system checks the email format for accuracy.</p>
+          </div>
+          <div 
+            className={`custom-step-item ${activeStep === 3 ? 'active' : ''}`} 
+            onClick={() => toggleStep(3)}
+          >
+            <div className="custom-step-heading">3. Domain Check</div>
+            <p className="custom-step-text">The domain is validated to ensure it is active and correct.</p>
+          </div>
+          <div 
+            className={`custom-step-item ${activeStep === 4 ? 'active' : ''}`} 
+            onClick={() => toggleStep(4)}
+          >
+            <div className="custom-step-heading">4. Get Results</div>
+            <p className="custom-step-text">Receive instant feedback on the email's validity.</p>
+          </div>
+        </div>
+
+        <div className="custom-get-started-container">
+          <a href="/signup" className="custom-get-started-button">Get Started</a>
         </div>
       </div>
     </div>

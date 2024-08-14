@@ -1,15 +1,236 @@
-@keyframes pop-out {
-    from {
-      transform: scale(0.9);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  .animate-pop-out {
-    animation: pop-out 0.3s ease-out forwards;
-  }
-  
+
+/* Feature section styles */
+/*
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 85%;
+  border: 2px solid #ddd; /* Added border around the feature section */
+/* }
+
+
+/* Section heading styles */
+/*
+.section-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+/* Features container styles */
+/*
+.features-container {
+  display: flex;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Headings container styles */
+/*
+.features-headings {
+  width: 30%;
+  background-color: #f9f9f9;
+  border-right: 2px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Individual feature heading styles */
+/*
+.feature-heading {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  font-size: 26px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  color: #000000;
+}
+
+.feature-heading:hover {
+  background-color: #e0e0e0;
+  color: #007bff;
+}
+
+.feature-heading.active {
+  background-color: #d0d0d0;
+  color: #007bff;
+}
+
+.feature-icon {
+  margin-right: 20px;
+  font-size: 48px;
+}
+
+/* Details container styles */
+/*
+.features-details {
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Individual feature detail styles */
+/*
+.feature-detail {
+  display: none;
+}
+
+.feature-detail.active {
+  display: block;
+}
+
+.feature-detail h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.feature-detail p {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Individual feature detail styles */
+/*
+.feature-detail ul {
+  list-style-type: disc; /* Adds bullet points */
+  /*
+  padding-left: 20px; /* Indents the bullets */
+  /*
+  margin-top: 10px; /* Adds some spacing above the list */
+  /*
+  color: #333; /* Ensures the bullet list matches the overall text color */
+  /*
+}
+
+
+.feature-detail li {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.feature-detail .highlight {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Try button styles */
+/*
+.try-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.try-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* New Feature */
+
+
+/* Container for the entire feature section */
+.feature-container {
+  max-width: 1200px;
+  padding: 40px; /* Adds gap before and after the section */
+  margin: 50px auto; /* Centers the section and adds gap above and below */
+  border: 2px solid #000000; /* Adds a border around the section */
+  border-radius: 10px; /* Optional: Rounds the corners of the border */
+  background-color: #f9f9f9; /* Optional: Background color for the section */
+}
+
+/* Styling for the heading */
+.feature-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #000000; /* Adjust color as needed */
+}
+
+/* Container for the feature items */
+.feature-content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Individual feature items */
+.feature-item {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #1f2937;
+  text-align: center;
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+}
+
+/* Styling for the icons */
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: #e0e7ff;
+}
+
+/* SVG styling inside the icon */
+.feature-svg {
+  width: 32px;
+  height: 32px;
+  color: teal; /* Adjust color as needed */
+}
+
+/* Title of each feature */
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff; /* Adjust color as needed */
+}
+
+/* Hide feature descriptions initially */
+.feature-description {
+  max-height: 0; /* Hide the element by setting max-height to 0 */
+  opacity: 0; /* Hide the element by setting opacity to 0 */
+  overflow: hidden; /* Ensure content does not overflow */
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* Animation timing */
+  font-size: 1.5rem;
+  color: #ffffff; /* Adjust color as needed */
+  margin-top: 10px; /* Add spacing above the description */
+}
+
+/* Display feature description when active with animation */
+.feature-item.active .feature-description {
+  max-height: 500px; /* Adjust this value based on the expected height of your content */
+  opacity: 1;
+}

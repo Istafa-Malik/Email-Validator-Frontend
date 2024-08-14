@@ -1,0 +1,96 @@
+
+/* Pricing.css */
+
+.pricing-section {
+  max-width: 1200px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the section */
+  border: 2px solid #000000; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 40px; /* Add space below the pricing section */
+}
+
+
+/* General styles for the pricing section */
+.relative {
+  position: relative;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb; /* Light gray background */
+}
+
+.bg-gray-900 {
+  background-color: #1f2937; /* Dark gray background */
+}
+
+.text-gray-900 {
+  color: #111827; /* Dark gray text */
+}
+
+.text-gray-700 {
+  color: #374151; /* Medium gray text */
+}
+
+.text-gray-500 {
+  color: #6b7280; /* Light gray text */
+}
+
+.text-teal-accent-400 {
+  color: #14b8a6; /* Teal color */
+}
+
+.bg-teal-accent-400 {
+  background-color: #14b8a6; /* Teal background */
+}
+
+.bg-deep-purple-accent-400 {
+  background-color: #7e22ce; /* Deep purple background */
+}
+
+.bg-deep-purple-accent-700 {
+  background-color: #6b21a8; /* Darker deep purple background */
+}
+
+.bg-gray-900 {
+  background-color: #1f2937; /* Dark gray background for the plan cards */
+}
+
+.rounded {
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+.p-8 {
+  padding: 2rem; /* Padding for plan cards */
+}
+
+.text-5xl {
+  font-size: 3rem; /* Larger text for prices */
+}
+
+.text-6xl {
+  font-size: 3.75rem; /* Larger text for prices */
+}
+
+.font-medium {
+  font-weight: 500; /* Medium font weight */
+}
+
+.font-semibold {
+  font-weight: 600; /* Semi-bold font weight */
+}
+
+.font-bold {
+  font-weight: 700; /* Bold font weight */
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
+}
+
+.transition {
+  transition: all 0.2s ease-in-out; /* Transition for hover effects */
+}
+
+.hover\:bg-deep-purple-accent-700:hover {
+  background-color: #6b21a8; /* Darker background on hover */
+}
