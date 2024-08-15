@@ -99,7 +99,7 @@ export const Content = () => {
           </div>
         </div>
         
-        <h3 className="custom-steps-heading">How to Use Email Validator</h3>
+        <h3 className="custom-steps-heading">How to Use Leads Verify</h3>
         
         <div className="custom-steps-container">
           <div 

@@ -1,0 +1,64 @@
+/* src/components/pages/HomePage.css */
+
+/* Apply a background pattern to the entire page */
+body {
+    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png') repeat; /* Subtle geometric pattern */
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* General styles for the homepage sections */
+  .homepage-section {
+    position: relative;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    background-color: rgba(0, 128, 128, 0.1); /* Slight teal overlay for all sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .homepage-section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Icon animations */
+  .homepage-section svg {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .homepage-section svg:hover {
+    transform: rotate(10deg) scale(1.05); /* Rotate and scale on hover */
+  }
+  
+  /* Interactive link/button effects */
+  .homepage-section a, .homepage-section button {
+    transition: color 0.3s ease, background-color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .homepage-section a:hover, .homepage-section button:hover {
+    color: #004f4f; /* Darker teal on hover */
+    text-decoration: underline; /* Underline effect on hover */
+  }
+  
+  /* Scroll-to-top button style */
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .scroll-to-top-button:hover {
+    background-color: #004f4f;
+  }
+  
+  

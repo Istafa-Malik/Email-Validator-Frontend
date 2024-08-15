@@ -1,161 +1,3 @@
-
-/* Feature section styles */
-/*
-.feature-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 60px;
-  margin-bottom: 60px;
-  height: 85%;
-  border: 2px solid #ddd; /* Added border around the feature section */
-/* }
-
-
-/* Section heading styles */
-/*
-.section-heading {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #000000;
-}
-
-/* Features container styles */
-/*
-.features-container {
-  display: flex;
-  width: 100%;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-/* Headings container styles */
-/*
-.features-headings {
-  width: 30%;
-  background-color: #f9f9f9;
-  border-right: 2px solid #ddd;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
-
-/* Individual feature heading styles */
-/*
-.feature-heading {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  cursor: pointer;
-  border-bottom: 1px solid #ddd;
-  font-size: 26px;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-  color: #000000;
-}
-
-.feature-heading:hover {
-  background-color: #e0e0e0;
-  color: #007bff;
-}
-
-.feature-heading.active {
-  background-color: #d0d0d0;
-  color: #007bff;
-}
-
-.feature-icon {
-  margin-right: 20px;
-  font-size: 48px;
-}
-
-/* Details container styles */
-/*
-.features-details {
-  width: 70%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Individual feature detail styles */
-/*
-.feature-detail {
-  display: none;
-}
-
-.feature-detail.active {
-  display: block;
-}
-
-.feature-detail h3 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #000000;
-}
-
-.feature-detail p {
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-
-/* Individual feature detail styles */
-/*
-.feature-detail ul {
-  list-style-type: disc; /* Adds bullet points */
-  /*
-  padding-left: 20px; /* Indents the bullets */
-  /*
-  margin-top: 10px; /* Adds some spacing above the list */
-  /*
-  color: #333; /* Ensures the bullet list matches the overall text color */
-  /*
-}
-
-
-.feature-detail li {
-  font-size: 26px;
-  margin-bottom: 10px;
-}
-
-.feature-detail .highlight {
-  color: #000000;
-  font-weight: bold;
-}
-
-/* Try button styles */
-/*
-.try-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.try-button:hover {
-  background-color: #0056b3;
-}
-
-
-
-
-/* New Feature */
-
-
 /* Container for the entire feature section */
 .feature-container {
   max-width: 1200px;
@@ -166,12 +8,22 @@
   background-color: #f9f9f9; /* Optional: Background color for the section */
 }
 
+/* Container to center the heading */
+.feature-heading-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between heading and content */
+}
+
 /* Styling for the heading */
 .feature-heading {
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 20px;
-  color: #000000; /* Adjust color as needed */
+  color: #ffffff; /* Adjust color as needed */
+  background-color: #1f2937; /* Add background color */
+  padding: 10px 20px; /* Add padding inside the oval box */
+  border-radius: 50px; /* Make the box oval by rounding the corners */
+  display: inline-block; /* Ensure the box fits tightly around the text */
 }
 
 /* Container for the feature items */

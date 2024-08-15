@@ -1,14 +1,11 @@
-
-/* Pricing.css */
-
+/* Pricing Section Styling */
 .pricing-section {
-  max-width: 1200px; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the section */
-  border: 2px solid #000000; /* Border color */
-  border-radius: 10px; /* Rounded corners */
-  margin-bottom: 40px; /* Add space below the pricing section */
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
-
 
 /* General styles for the pricing section */
 .relative {
@@ -16,81 +13,94 @@
 }
 
 .bg-gray-50 {
-  background-color: #f9fafb; /* Light gray background */
+  background-color: #f9fafb;
 }
 
 .bg-gray-900 {
-  background-color: #1f2937; /* Dark gray background */
+  background-color: #1f2937;
 }
 
 .text-gray-900 {
-  color: #111827; /* Dark gray text */
+  color: #111827;
 }
 
 .text-gray-700 {
-  color: #374151; /* Medium gray text */
+  color: #374151;
 }
 
 .text-gray-500 {
-  color: #6b7280; /* Light gray text */
+  color: #6b7280;
 }
 
 .text-teal-accent-400 {
-  color: #14b8a6; /* Teal color */
+  color: #14b8a6;
 }
 
 .bg-teal-accent-400 {
-  background-color: #14b8a6; /* Teal background */
+  background-color: #14b8a6;
 }
 
 .bg-deep-purple-accent-400 {
-  background-color: #7e22ce; /* Deep purple background */
+  background-color: #7e22ce;
 }
 
 .bg-deep-purple-accent-700 {
-  background-color: #6b21a8; /* Darker deep purple background */
-}
-
-.bg-gray-900 {
-  background-color: #1f2937; /* Dark gray background for the plan cards */
+  background-color: #6b21a8;
 }
 
 .rounded {
-  border-radius: 0.5rem; /* Rounded corners */
+  border-radius: 0.5rem;
 }
 
 .p-8 {
-  padding: 2rem; /* Padding for plan cards */
+  padding: 2rem;
 }
 
 .text-5xl {
-  font-size: 3rem; /* Larger text for prices */
+  font-size: 3rem;
 }
 
 .text-6xl {
-  font-size: 3.75rem; /* Larger text for prices */
+  font-size: 3.75rem;
 }
 
 .font-medium {
-  font-weight: 500; /* Medium font weight */
+  font-weight: 500;
 }
 
 .font-semibold {
-  font-weight: 600; /* Semi-bold font weight */
+  font-weight: 600;
 }
 
 .font-bold {
-  font-weight: 700; /* Bold font weight */
+  font-weight: 700;
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .transition {
-  transition: all 0.2s ease-in-out; /* Transition for hover effects */
+  transition: all 0.2s ease-in-out;
 }
 
 .hover\:bg-deep-purple-accent-700:hover {
-  background-color: #6b21a8; /* Darker background on hover */
+  background-color: #6b21a8;
+}
+
+/* Oval-shaped heading styling */
+.pricing-heading-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pricing-heading {
+  text-align: center;
+  font-size: 2rem; /* Adjust font size if needed */
+  color: #ffffff; /* White text color */
+  background-color: #1f2937; /* Dark gray background color */
+  padding: 10px 30px; /* Padding inside the oval box */
+  border-radius: 50px; /* Make the box oval by rounding the corners */
+  display: inline-block; /* Ensure the box fits tightly around the text */
 }

@@ -1,14 +1,15 @@
 // src/components/pages/HomePage.js
 import React, { useEffect } from 'react';
-import Navbar from '../Navbar'; // Import Navbar component
-import {Header} from '../Header.js';
+import Navbar from '../Navbar'; 
+import { Header } from '../Header.js';
 import { Feature } from '../Feature';
 import { Pricing } from '../Pricing';
 import { Content } from '../Content';
 import { Faq } from '../Faq';
 import Footer from '../Footer';
-import ScrollToTopButton from '../ScrollToTopButton'; // Import the ScrollToTopButton
+import ScrollToTopButton from '../ScrollToTopButton';
 import { useLocation } from 'react-router-dom';
+import './HomePage.css'; // Import the CSS for styling
 
 const HomePage = () => {
   const location = useLocation();
@@ -26,22 +27,22 @@ const HomePage = () => {
 
   return (
     <>
-      <Navbar /> {/* Include Navbar here */}
-      <Header/> {   }
-      <section id="features">
+      <Navbar />
+      <Header />
+      <section id="features" className="homepage-section">
         <Feature />
       </section>
-      <section id="pricing">
+      <section id="pricing" className="homepage-section">
         <Pricing />
       </section>
-      <section id="content">
+      <section id="content" className="homepage-section">
         <Content />
       </section>
-      <section id="faq">
+      <section id="faq" className="homepage-section">
         <Faq />
       </section>
       <Footer />
-      <ScrollToTopButton /> {/* Include the ScrollToTopButton */}
+      <ScrollToTopButton />
     </>
   );
 };

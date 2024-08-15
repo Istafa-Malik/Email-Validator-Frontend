@@ -12,8 +12,8 @@ export const Header = () => {
               <span className="header-highlight">lazy dog</span>
             </h2>
             <p className="header-description">
-            Thus, it is that the entire thing was born from the pursuit of fault, the 
-            accusations of fault, and the praise for pain, as I uncover the whole
+              Thus, it is that the entire thing was born from the pursuit of fault, the 
+              accusations of fault, and the praise for pain, as I uncover the whole
             </p>
             <a
               href="/"
@@ -29,6 +29,13 @@ export const Header = () => {
                 <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
               </svg>
             </a>
+          </div>
+          <div className="header-image-container">
+            <img
+              src="https://kitwind.io/assets/kometa/full-browser.png"
+              className="object-cover object-top w-full h-64 max-w-xl -mb-16 rounded shadow-2xl lg:ml-64 xl:ml-8 lg:-mb-24 xl:-mb-28 lg:h-auto lg:max-w-screen-md"
+              alt=""
+            />
           </div>
         </div>
       </div>

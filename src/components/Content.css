@@ -1,23 +1,26 @@
 /* Styles for the container holding the content section */
 .custom-content-container {
   padding: 20px;
-  background-color: #ffffff; /* Background color for the entire content section */
-  border: 2px solid #000000; /* Teal border around the section */
-  border-radius: 8px; /* Rounded corners for the border */
-  width: 80%; /* Reduced width of the section */
-  max-width: 1200px; /* Maximum width */
-  margin: 0 auto; /* Center the section */
-  padding-bottom: 80px; /* Space below the content section */
-  margin-bottom: 40px; /* Space after the section ends */
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 /* Style for the heading */
 .custom-content-heading {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
   text-align: center;
-  margin-bottom: 36px; /* Space below the heading */
-  font-size: 26.4px; /* Larger font size */
-  font-weight: bold; /* Bold text */
-  color: #000000; /* Teal color */
+  margin: 0 auto 36px auto;
+  font-size: 26.4px;
+  font-weight: bold;
 }
 
 /* Style for the wrapper containing feature items */
@@ -35,7 +38,7 @@
 }
 
 .custom-feature-item {
-  background: #1f2937; /* White background for individual feature items */
+  background: #1f2937;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -51,28 +54,31 @@
 .custom-icon-svg {
   width: 40px;
   height: 40px;
-  color: rgb(255, 255, 255); /* Color for the icon */
+  color: #ffffff;
 }
 
 .custom-feature-heading {
-  font-size: 19.8px; /* Larger font size */
-  font-weight: bold; /* Bold text */
-  color: #ffffff; /* Teal color */
+  font-size: 19.8px;
+  font-weight: bold;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .custom-feature-text {
   font-size: 20px;
-  color: #ffffff; /* Dark grey text color */
+  color: #ffffff;
 }
 
 /* Steps section styling */
 .custom-steps-heading {
   text-align: center;
-  margin: 48px 0 24px; /* Space above and below the heading */
-  font-size: 24.2px; /* Larger font size */
-  font-weight: bold; /* Bold text */
-  color: #000000; /* Teal color */
+  margin: 48px 0 24px;
+  font-size: 24.2px;
+  font-weight: bold;
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 
 .custom-steps-container {
@@ -83,39 +89,43 @@
 }
 
 .custom-step-item {
-  background: #1f2937; /* White background for individual step items */
+  background: #1f2937;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   flex: 1;
   min-width: 200px;
   text-align: center;
-  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  cursor: pointer;
 }
 
 .custom-step-heading {
-  font-size: 17.6px; /* Larger font size */
-  font-weight: bold; /* Bold text */
-  color: #ffffff; /* Teal color */
+  font-size: 17.6px;
+  font-weight: bold;
+  color: #ffffff;
   margin: 10px 0;
 }
 
 .custom-step-text {
   font-size: 20px;
-  color: #000000; /* Dark grey text color */
-  display: none; /* Hidden by default */
-  margin-top: 10px;
+  color: #ffffff;
+  overflow: hidden;
+  max-height: 0; /* Hidden by default */
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition effect */
 }
 
 /* Show step text when step is active */
 .custom-step-item.active .custom-step-text {
-  display: block;
+  max-height: 100px; /* Adjust based on content height */
+  opacity: 1;
+  padding-top: 10px; /* Optional: space between heading and text */
 }
 
 /* Get Started button styles */
 .custom-get-started-container {
   text-align: center;
-  margin-top: 40px; /* Space above the button */
+  margin-top: 40px;
 }
 
 .custom-get-started-button {
@@ -123,12 +133,12 @@
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #fff; /* White text color */
-  background-color: #008080; /* Teal background color */
+  color: #fff;
+  background-color: #008080;
   border-radius: 8px;
   text-decoration: none;
 }
 
 .custom-get-started-button:hover {
-  background-color: #005f5f; /* Darker teal color on hover */
+  background-color: #005f5f;
 }
