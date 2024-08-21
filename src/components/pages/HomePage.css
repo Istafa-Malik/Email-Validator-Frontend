@@ -1,64 +1,58 @@
-/* src/components/pages/HomePage.css */
-
-/* Apply a background pattern to the entire page */
+/* Apply background pattern to the entire page */
 body {
-    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini.png') repeat; /* Subtle geometric pattern */
-    background-size: cover;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* General styles for the homepage sections */
-  .homepage-section {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d8bfdf, #f8cad2, #fcd4c2, #ffe7bf);
+    background-size: 200% 200%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+/* Ensure sections do not inherit background color */
+.homepage-section {
+    background: linear-gradient(to bottom, #f3f0d7 10%, #ffffff 50%); /* Light blue to white gradient */
+    padding: 2rem;
+    border-radius: 0.5rem;
     position: relative;
-    padding: 60px 20px;
-    margin-bottom: 40px;
-    border-radius: 8px;
-    background-color: rgba(0, 128, 128, 0.1); /* Slight teal overlay for all sections */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  .homepage-section:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-  }
-  
-  /* Icon animations */
-  .homepage-section svg {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .homepage-section svg:hover {
-    transform: rotate(10deg) scale(1.05); /* Rotate and scale on hover */
-  }
-  
-  /* Interactive link/button effects */
-  .homepage-section a, .homepage-section button {
-    transition: color 0.3s ease, background-color 0.3s ease, text-decoration 0.3s ease;
-  }
-  
-  .homepage-section a:hover, .homepage-section button:hover {
-    color: #004f4f; /* Darker teal on hover */
-    text-decoration: underline; /* Underline effect on hover */
-  }
-  
-  /* Scroll-to-top button style */
-  .scroll-to-top-button {
+    z-index: 1; /* Ensure sections stay on top of the background */
+}
+
+/* Ensure the navbar and footer stay on top of the background */
+.navbar {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #008080;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .scroll-to-top-button:hover {
-    background-color: #004f4f;
-  }
-  
-  
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a202c; /* Dark background for the navbar */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a202c; /* Dark background for the footer */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Animation for background gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Optional styling for sections */
+.homepage-section:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for alternating sections */
+}
+
+.homepage-section:nth-of-type(even) {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly darker for contrast */
+}

@@ -1,23 +1,24 @@
-/* src/components/Header.css */
-
 /* Add top margin to create space for the fixed navbar */
 .header-overflow-hidden {
   overflow: hidden;
-  background-color: #1a202c; /* bg-gray-900 */
   margin-top: 60px; /* Adjust this value based on the height of your navbar */
 }
 
 .header-container {
   padding: 4rem 1rem;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
+  background-image: url('/public/image/31.jpg'); /* Correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @media (min-width: 1280px) {
@@ -30,13 +31,14 @@
   width: 100%;
   max-width: 30rem;
   margin-bottom: 3rem;
-  padding-right: 4rem;
+  text-align: center;
 }
 
 @media (min-width: 1280px) {
   .header-text-container {
     margin-bottom: 0;
     width: 58.333333%;
+    text-align: left;
   }
 }
 
@@ -47,7 +49,7 @@
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.25;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 @media (min-width: 640px) {
@@ -58,14 +60,14 @@
 }
 
 .header-highlight {
-  color: #4fd1c5; /* text-teal-accent-400 */
+  color: #000000; /* text-teal-accent-400 */
 }
 
 .header-description {
   max-width: 28rem;
   margin-bottom: 1rem;
-  font-size: 1rem;
-  color: #a0aec0; /* text-gray-400 */
+  font-size: 1.5rem !important;
+  color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -78,12 +80,12 @@
   display: inline-flex;
   align-items: center;
   font-weight: 600;
-  color: #4fd1c5; /* text-teal-accent-400 */
+  color: #ffffff;
   transition: color 0.2s;
 }
 
 .header-link:hover {
-  color: #38b2ac; /* hover:text-teal-accent-700 */
+  color: #38b2ac;
 }
 
 .header-icon {
@@ -92,7 +94,7 @@
   margin-left: 0.5rem;
 }
 
-/* New section for the image styling */
+/* Optional image container styling */
 .header-image-container {
   max-width: 600px;
   margin-left: 20px;
@@ -103,7 +105,7 @@
   object-cover: cover;
   object-position: top;
   width: 100%;
-  height: 51.2px; /* 20% shorter than the original height of 64px */
+  height: 51.2px;
   max-width: 28rem;
   margin-bottom: -16px;
   border-radius: 0.5rem;

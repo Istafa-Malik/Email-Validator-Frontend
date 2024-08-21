@@ -1,144 +1,75 @@
-/* Styles for the container holding the content section */
-.custom-content-container {
+.content {
   padding: 20px;
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 8px;
-  width: 80%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding-bottom: 80px;
+}
+
+.content h1 {
+  text-align: center;
   margin-bottom: 40px;
+  font-size: 2rem;
+  color: #333;
 }
 
-/* Style for the heading */
-.custom-content-heading {
-  background-color: #1f2937;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-align: center;
-  margin: 0 auto 36px auto;
-  font-size: 26.4px;
-  font-weight: bold;
-}
-
-/* Style for the wrapper containing feature items */
-.custom-content-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Features section styling */
-.custom-features-grid {
+.steps {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.custom-feature-item {
-  background: #1f2937;
+.step-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.step {
+  background: linear-gradient(to bottom, #f3f0d7 10%, #ffffff 50%);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex: 1;
-  min-width: 250px;
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 70%; /* Adjust width as needed */
 }
 
-.custom-feature-icon {
-  margin-bottom: 10px;
-}
-
-.custom-icon-svg {
-  width: 40px;
-  height: 40px;
-  color: #ffffff;
-}
-
-.custom-feature-heading {
-  font-size: 19.8px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.custom-feature-text {
-  font-size: 20px;
-  color: #ffffff;
-}
-
-/* Steps section styling */
-.custom-steps-heading {
-  text-align: center;
-  margin: 48px 0 24px;
-  font-size: 24.2px;
-  font-weight: bold;
-  background-color: #1f2937;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-}
-
-.custom-steps-container {
+.step-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 
-.custom-step-item {
-  background: #1f2937;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-  cursor: pointer;
+.step-icon .icon {
+  width: 100%;
+  height: 100%;
+  fill: #4a90e2;
 }
 
-.custom-step-heading {
-  font-size: 17.6px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 10px 0;
+.step-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.custom-step-text {
-  font-size: 20px;
-  color: #ffffff;
-  overflow: hidden;
-  max-height: 0; /* Hidden by default */
-  opacity: 0;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transition effect */
+.step-details h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
 }
 
-/* Show step text when step is active */
-.custom-step-item.active .custom-step-text {
-  max-height: 100px; /* Adjust based on content height */
-  opacity: 1;
-  padding-top: 10px; /* Optional: space between heading and text */
+.step-details p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #666;
 }
 
-/* Get Started button styles */
-.custom-get-started-container {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.custom-get-started-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #008080;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-.custom-get-started-button:hover {
-  background-color: #005f5f;
+.step-image {
+  max-width: 30%; /* Adjust width as needed */
+  height: auto;
+  object-fit: cover;
 }

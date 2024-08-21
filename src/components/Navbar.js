@@ -29,7 +29,7 @@ const Navbar = () => {
           <span className="navbar-title">Leads Verify</span>
         </Link>
         <div className="navbar-links">
-          <Link to="/?scrollTo=features" className="navbar-link">
+          <Link to="/?scrollTo=features2" className="navbar-link">
             Features
           </Link>
           <Link to="/?scrollTo=pricing" className="navbar-link">

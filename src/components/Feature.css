@@ -1,3 +1,5 @@
+/* Feature.css */
+
 /* Container for the entire feature section */
 .feature-container {
   max-width: 1200px;
@@ -15,15 +17,16 @@
   margin-bottom: 20px; /* Space between heading and content */
 }
 
-/* Styling for the heading */
-.feature-heading {
+/* Ensure specific styles for headings in feature sections */
+.feature-container .feature-heading {
   text-align: center;
   font-size: 3rem;
-  color: #ffffff; /* Adjust color as needed */
-  background-color: #1f2937; /* Add background color */
-  padding: 10px 20px; /* Add padding inside the oval box */
-  border-radius: 50px; /* Make the box oval by rounding the corners */
+  color: #000000; /* Change text color to black */
+  background-color: transparent; /* Remove background color */
+  padding: 0; /* Remove padding */
+  border-radius: 0; /* Remove border radius to eliminate oval effect */
   display: inline-block; /* Ensure the box fits tightly around the text */
+  z-index: 10; /* Ensure it appears above other elements */
 }
 
 /* Container for the feature items */

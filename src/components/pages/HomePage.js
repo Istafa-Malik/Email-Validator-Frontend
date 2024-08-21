@@ -2,10 +2,10 @@
 import React, { useEffect } from 'react';
 import Navbar from '../Navbar'; 
 import { Header } from '../Header.js';
-import { Feature } from '../Feature';
+import { Feature2 } from '../Feature2';
 import { Pricing } from '../Pricing';
-import { Content } from '../Content';
-import { Faq } from '../Faq';
+import  Content  from '../Content';
+import  {Faq}  from '../Faq';
 import Footer from '../Footer';
 import ScrollToTopButton from '../ScrollToTopButton';
 import { useLocation } from 'react-router-dom';
@@ -29,8 +29,8 @@ const HomePage = () => {
     <>
       <Navbar />
       <Header />
-      <section id="features" className="homepage-section">
-        <Feature />
+      <section id="features2" className="homepage-section">
+        <Feature2 />
       </section>
       <section id="pricing" className="homepage-section">
         <Pricing />
