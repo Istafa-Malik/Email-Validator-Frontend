@@ -3,8 +3,8 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #0c0520 !important; /* Dark background color */
-  color: #ffffff; /* White color for the icon */
+  background-color: rgba(255, 255, 255, 0.1); /* Dark background color */
+  color: black; /* White color for the icon */
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -19,7 +19,7 @@
 }
 
 .scroll-to-top:hover {
-  background-color: #1f2937; /* Slightly lighter shade on hover */
+  background-color: #FFA726; /* Slightly lighter shade on hover */
 }
 
 .scroll-to-top:active {
