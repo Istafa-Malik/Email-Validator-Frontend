@@ -24,7 +24,7 @@
 }
 
 .step {
-  background: linear-gradient(to bottom, #f3f0d7 10%, #ffffff 50%);
+  
   display: flex;
   align-items: flex-start;
   gap: 20px;
