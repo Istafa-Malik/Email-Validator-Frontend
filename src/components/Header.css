@@ -42,11 +42,11 @@
 }
 
 .header-highlight {
-  color: #14b8a6; /* text-teal-accent-400 */
+  color: #FFA726; /* text-teal-accent-400 */
 }
 
 .header-description {
-  max-width: 32rem;
+  max-width: 38rem;
   margin-bottom: 1rem;
   color: #9ca3af; /* text-gray-400 */
   font-size: 1rem;
@@ -56,12 +56,12 @@
   display: inline-flex;
   align-items: center;
   font-weight: 600;
-  color: #14b8a6;
+  color: #FFA726;
   transition: color 0.2s;
 }
 
 .header-link:hover {
-  color: #0f766e; /* hover:text-teal-accent-700 */
+  color: #ce8415; /* hover:text-teal-accent-700 */
 }
 
 .header-link-icon {
@@ -69,3 +69,4 @@
   width: 0.75rem;
   margin-left: 0.5rem;
 }
+

@@ -1,8 +1,15 @@
-import React from 'react';
-import './Header.css';
+import "./Header.css";
 
 export const Header = () => {
+
+  
+
+
   return (
+  
+
+   
+
     <div className="header-container">
       <img
         src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"

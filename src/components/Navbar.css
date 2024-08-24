@@ -1,109 +1,89 @@
 /* Import the Poppins font with different weights */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* Navbar structure */
-.navbar {
-  font-family: 'Poppins', sans-serif; /* Use Poppins font */
-  position: fixed; /* Fixes the navbar at the top of the viewport */
-  border: 2px solid #ffffff;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/* new header design  */
+.header {
+  position: fixed;
   top: 0;
-  left: 0;
-  background: #0c0520 !important; /* Light blue to white gradient */
-  transition: all 0.3s ease-in-out; /* Smooth transition for changes */
-  z-index: 1000; /* Ensure navbar is on top of other content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add shadow for better visibility */
-}
-
-/* Shrink effect on scroll */
-.navbar-shrink {
-  transform: scaleY(0.9); /* Shrink the navbar */
-  transform-origin: top; /* Ensure it shrinks from the top */
-  padding: 0.5rem 1rem; /* Adjust padding */
-}
-
-/* Ensure header has enough top margin to avoid overlap */
-body {
-  margin-top: 60px; /* Adjust according to your navbar height */
-}
-
-/* Navbar container for layout */
-.navbar-container {
-  padding: 1rem 1rem; /* Adjust padding if needed */
-  max-width: 100%;
-  margin: 0 auto; /* Center align */
+  width: 100%;
+  height: 80px;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 10px 9%;
+  background-color: rgba(255, 255, 255, 0.1); /* Initially transparent */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* No shadow initially */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
   display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: space-between; /* Ensure space between the brand and links */
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Navbar brand styles */
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
-  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 700; /* Increased boldness */
-  transition: transform 0.3s ease, color 0.3s ease;
-  border: 2px solid rgb(255, 255, 255);
-  padding: 8px 16px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  white-space: nowrap;
+  color: #000;
+  transition: color 0.3s ease; /* Add transition for smooth hover effect */
 }
 
-.navbar-brand:hover {
-  color: teal;
-  transform: scale(1.1);
+.navbar-brand:hover .navbar-title {
+  color: #FFA726; /* Change the text color on hover */
 }
 
-/* Navbar links container */
+.navbar-icon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #FFA726; /* Keep the icon color always orange */
+}
+
+.navbar-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+
+
 .navbar-links {
+  font-size: 17px;
+  font-weight: 600;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 50px;
 }
 
-/* Common styling for navbar links */
 .navbar-link {
-  color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  font-weight: 600; /* Increased boldness */
-  transition: transform 0.3s ease, color 0.3s ease;
-  white-space: nowrap;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar-link:hover {
-  color: teal;
-  transform: scale(1.1);
+  color: #FFA726;
 }
 
-/* Styling for the 'Sign Up' button */
 .signup-button {
-  border: 2px solid rgb(255, 255, 255);
+  background-color: #FFA726;
+  color: #fff;
   padding: 8px 16px;
   border-radius: 5px;
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  font-size: 1.1rem;
-  font-weight: 700; /* Increased boldness */
-  letter-spacing: 1px;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  white-space: nowrap;
+  transition: background-color 0.3s ease;
 }
 
 .signup-button:hover {
-  color: teal;
-  transform: scale(1.1);
-  background-color: rgb(255, 255, 255);
-}
-
-/* Icon styling */
-.navbar-icon {
-  margin-right: 0.5rem; /* Space between icon and text */
-  font-size: 1.25rem; /* Set icon size */
+  color: #000;
 }
