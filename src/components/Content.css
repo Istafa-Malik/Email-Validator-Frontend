@@ -24,7 +24,6 @@
 }
 
 .step {
-  
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -69,7 +68,8 @@
 }
 
 .step-image {
+  width: auto; /* Maintain aspect ratio */
   max-width: 30%; /* Adjust width as needed */
-  height: auto;
+  height: 200px; /* Set a consistent height for all images */
   object-fit: cover;
 }
