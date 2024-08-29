@@ -32,13 +32,13 @@ const HomePage = () => {
       <section id="features2" className="homepage-section">
         <Feature2 />
       </section>
-      <section id="pricing" className="homepage-section">
+      <section id="pricing"  className="home-pricing bg-blue-50 ">
         <Pricing />
       </section>
-      <section id="content" className="homepage-section">
+      <section id="content" className="homepage-section  ">
         <Content />
       </section>
-      <section id="faq" className="homepage-section">
+      <section id="faq" className="homepage-section   ">
         <Faq />
       </section>
       <Footer />

@@ -1,6 +1,6 @@
 .footer-container {
-    background-color: rgba(247, 247, 247, 0.9); /* Slightly darker white */
-    color: black; /* Sets text color to black */
+    background-color: #1D262E;
+    color: #d6d6d6; /* Sets text color to black */
     border: 1px solid rgba(0, 0, 0, 0.1); /* Light colored border */
     padding: 2rem; /* Adds some padding around the footer */
   }
@@ -30,18 +30,20 @@
   }
   
   .footer-heading {
+    color: white;
     font-weight: 500;
     letter-spacing: 0.05rem;
   }
   
   .footer-list {
+    font-size: 14px;
     margin-top: 0.5rem;
     list-style-type: none;
     padding: 0;
   }
   
   .footer-link {
-    color: black; /* Sets link color to black */
+    
     transition: color 0.3s ease;
   }
   
@@ -58,8 +60,8 @@
   }
   
   .footer-text {
-    font-size: 0.875rem;
-    color: black; /* Sets copyright text color to black */
+    font-size: 11px;
+  
   }
   
   .footer-icons {
@@ -69,7 +71,7 @@
   }
   
   .footer-icon {
-    color: black; /* Sets icon color to black */
+   
     transition: color 0.3s ease;
   }
   

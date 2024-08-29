@@ -38,14 +38,14 @@ const Item = ({ title, children }) => {
 
 export const Faq = () => {
   return (
-    <div className="faq-container">
+    <div className="faq-container ">
       <div className="faq-header">
         <p className="faq-title">Frequently Asked Questions</p>
         <p className="faq-description">
           Find answers to common questions about Lead Verify, including features, bulk validation, and more.
         </p>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         <Item title="What features does Lead Verify offer?">
           Lead Verify provides a range of features including email validation, real-time verification, and detailed reporting. It helps ensure that your leads are accurate and valid, improving your marketing and outreach efforts.
         </Item>

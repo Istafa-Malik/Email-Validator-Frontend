@@ -74,7 +74,7 @@ const Content = () => {
       <div className="steps">
         {steps.map((step) => (
           <div key={step.number} className="step-container">
-            <div className="step">
+            <div className="step bg-blue-50">
               <div className="step-icon">{step.icon}</div>
               <div className="step-details">
                 <h2>Step {step.number}: {step.title}</h2>
